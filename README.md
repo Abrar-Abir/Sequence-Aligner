@@ -30,6 +30,7 @@ Among them, [FOGSAA (Fast Optimal Global Sequence Alignment Algorithm)](https://
 
 ### Version Control Plan: 
 [Github](https://github.com/Abrar-Abir/Sequence-Aligner)
+All changes will be committed in this Github repo after each coding sessions (typically an hour). 
 
 ### Module List: 
 * PyGame
