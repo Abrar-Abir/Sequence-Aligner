@@ -1,5 +1,5 @@
 # Sequence Aligner
-## A Python project for global alignment of Nucleic Acid sequences using FOGSAA
+## A Python project for global alignment of Nucleic Acid sequences using FOGSAA, NW algorithm
 ---
 ### Project Description: 
 In bioinformatics, a sequence alignment is a way of arranging the sequences of DNA, RNA, or protein to identify regions of similarity that may be a consequence of functional, structural, or evolutionary relationships between the sequences.[1] Aligned sequences of nucleotide or amino acid residues are typically represented as rows within a matrix. Gaps are inserted between the residues so that identical or similar characters are aligned in successive columns. [[1](https://en.wikipedia.org/wiki/Sequence_alignment)]
@@ -12,13 +12,15 @@ This project will implement the principle of sequence alignment from scratch- fo
 ### Structural Plan: 
 A structural plan for how the finalized project will be organized in different functions, files and/or objects.
 
-* Graphical User Interface (gui.py) | Prompt for uploading the sequences to be aligned
+* Graphical User Interface (main.py) | Prompt for uploading the sequences to be aligned (Tkinter)
 * Back-end for Alignment (fogsaa.py) | FOGSAA Algorithm
-* Graphical User Interface (gui.py) | Displaying the aligned sequence
+* Back-end for Alignment (nw.py) | NW Algorithm
+* Graphical User Interface (main.py) | Displaying the aligned sequence
 
 ### Algorithmic Plan: 
 There are many algorithms developed for sequence alignment, namely- [Needleman–Wunsch (NW) algorithm](https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm), [Global Alignment Program Version 3 (GAP3)](https://academic.oup.com/bioinformatics/article/19/2/228/372697), [FOGSAA (Fast Optimal Global Sequence Alignment Algorithm)](https://www.nature.com/articles/srep01746), etc.
 Among them, [FOGSAA (Fast Optimal Global Sequence Alignment Algorithm)](https://www.nature.com/articles/srep01746) is the most efficient and accurate algorithm, and hence this algorithm will be used for this project. 
+Later, [Needleman–Wunsch (NW) algorithm](https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm) is also added to the project.
 
 ### Timeline Plan: 
 * 15/11/2021 : tp1
@@ -33,4 +35,5 @@ Among them, [FOGSAA (Fast Optimal Global Sequence Alignment Algorithm)](https://
 All changes will be committed in this Github repo after each coding sessions (typically an hour). 
 
 ### Module List: 
-* PyGame
+* PyGame (managing multiple pages of Tkinter)
+* Tkinter (prompting for user response in single page interfaces)
